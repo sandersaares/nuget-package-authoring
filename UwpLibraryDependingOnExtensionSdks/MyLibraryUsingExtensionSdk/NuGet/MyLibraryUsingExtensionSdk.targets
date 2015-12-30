@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<SDKReference Include="Microsoft.PlayerFramework.Xaml.UWP, Version=3.0.0.2">
+			<Name>Microsoft Player Framework</Name>
+		</SDKReference>
+	</ItemGroup>
+</Project>

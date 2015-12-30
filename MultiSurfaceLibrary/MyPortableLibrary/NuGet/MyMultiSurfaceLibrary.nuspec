@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata minClientVersion="3.2">
+		<id>Example.MyMultiSurfaceLibrary</id>
+		<version>1.0.0</version>
+		<authors>Sander Saares</authors>
+		<description>Example of a multi-platform library that exposes different API surfaces to .NET 4.6 and UWP and also includes a portable component.</description>
+	</metadata>
+	<files>
+		<file src="..\bin\Release\MyPortableLibrary.*" target="lib\net46" />
+		<file src="..\bin\Release\MyPortableLibrary.*" target="lib\uap10.0" />
+		<file src="..\bin\Release\MyPortableLibrary.*" target="lib\dotnet" />
+		
+		<file src="..\..\MyDotNetLibrary\bin\Release\MyDotNetLibrary.*" target="lib\net46" />
+		<file src="..\..\MyUwpLibrary\bin\Release\MyUwpLibrary.*" target="lib\uap10.0" />
+	</files>
+</package>

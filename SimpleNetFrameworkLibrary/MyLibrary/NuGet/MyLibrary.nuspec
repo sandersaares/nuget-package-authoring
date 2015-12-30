@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata minClientVersion="3.2">
+		<id>Example.MyLibrary</id>
+		<version>1.0.0</version>
+		<authors>Sander Saares</authors>
+		<description>Example of a simple .NET Framework 4.6 library.</description>
+	</metadata>
+	<files>
+		<file src="..\bin\Release\MyLibrary.*" target="lib\net46" />
+	</files>
+</package>

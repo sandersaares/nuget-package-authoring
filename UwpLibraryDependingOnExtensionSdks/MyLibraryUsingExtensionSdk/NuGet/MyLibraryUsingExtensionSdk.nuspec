@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata minClientVersion="3.2">
+		<id>Example.MyLibraryUsingExtensionSdk</id>
+		<version>1.0.0</version>
+		<authors>Sander Saares</authors>
+		<description>Example of a simple UWP library that depends on an extension SDK.</description>
+	</metadata>
+	<files>
+		<!-- Causes referencing this NuGet package to also automatically reference the relevant extension SDKs. -->
+		<file src="MyLibraryUsingExtensionSdk.targets" target="build\uap10.0\MyLibraryUsingExtensionSdk.targets" />
+	
+		<file src="..\bin\Release\**" target="lib\uap10.0" />
+	</files>
+</package>
