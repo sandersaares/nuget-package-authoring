@@ -3,7 +3,7 @@
 	<metadata minClientVersion="3.2">
 		<id>Example.MyLibrary</id>
 		<version>1.0.0</version>
-		<authors>Sander Saares</authors>
+		<authors>Firstname Lastname</authors>
 		<description>Example of a simple .NET Framework 4.6 library.</description>
 	</metadata>
 	<files>

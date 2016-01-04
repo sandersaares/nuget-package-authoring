@@ -3,7 +3,7 @@
 	<metadata minClientVersion="3.2">
 		<id>Example.MyMultiSurfaceLibrary</id>
 		<version>1.0.0</version>
-		<authors>Sander Saares</authors>
+		<authors>Firstname Lastname</authors>
 		<description>Example of a multi-platform library that exposes different API surfaces to .NET 4.6 and UWP and also includes a portable component.</description>
 	</metadata>
 	<files>

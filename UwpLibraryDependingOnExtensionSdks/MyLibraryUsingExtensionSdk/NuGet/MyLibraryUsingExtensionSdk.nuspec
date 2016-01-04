@@ -3,7 +3,7 @@
 	<metadata minClientVersion="3.2">
 		<id>Example.MyLibraryUsingExtensionSdk</id>
 		<version>1.0.0</version>
-		<authors>Sander Saares</authors>
+		<authors>Firstname Lastname</authors>
 		<description>Example of a simple UWP library that depends on an extension SDK.</description>
 	</metadata>
 	<files>
