@@ -121,12 +121,21 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArchitectureControl.xaml.cs">
+      <DependentUpon>ArchitectureControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ArchitectureDetector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\MultiArchitectureUwpLibrary.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="NuGet\NuGet.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ArchitectureControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
