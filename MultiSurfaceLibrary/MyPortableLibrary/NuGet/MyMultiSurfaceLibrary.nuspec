@@ -12,6 +12,8 @@
 		<file src="..\bin\Release\MyPortableLibrary.*" target="lib\dotnet" />
 		
 		<file src="..\..\MyDotNetLibrary\bin\Release\MyDotNetLibrary.*" target="lib\net46" />
-		<file src="..\..\MyUwpLibrary\bin\Release\MyUwpLibrary.*" target="lib\uap10.0" />
+		
+		<!-- Double wildcard also ensures that the subdirectory is packaged. -->
+		<file src="..\..\MyUwpLibrary\bin\Release\MyUwpLibrary**" target="lib\uap10.0" />
 	</files>
 </package>
