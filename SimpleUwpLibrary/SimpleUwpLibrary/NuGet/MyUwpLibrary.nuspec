@@ -11,6 +11,6 @@
 	</metadata>
 	<files>
 		<!-- The double wildcard will also grab all the resource files and the resource subdirectory. -->
-		<file src="..\bin\Release\SimpleUwpLibrary**" target="lib\uap10.0" />
+		<file src="..\bin\Release\MyUwpLibrary**" target="lib\uap10.0" />
 	</files>
 </package>
