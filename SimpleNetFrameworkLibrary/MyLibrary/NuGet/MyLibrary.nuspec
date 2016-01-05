@@ -5,6 +5,9 @@
 		<version>1.0.0</version>
 		<authors>Firstname Lastname</authors>
 		<description>Example of a simple .NET Framework 4.6 library.</description>
+		<dependencies>
+			<dependency id="Newtonsoft.Json" version="8.0.1" />
+		</dependencies>
 	</metadata>
 	<files>
 		<file src="..\bin\Release\MyLibrary.*" target="lib\net46" />
