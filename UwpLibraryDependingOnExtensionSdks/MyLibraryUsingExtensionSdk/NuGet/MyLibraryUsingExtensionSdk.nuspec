@@ -10,6 +10,6 @@
 		<!-- Causes referencing this NuGet package to also automatically reference the relevant extension SDKs. -->
 		<file src="MyLibraryUsingExtensionSdk.targets" target="build\uap10.0\MyLibraryUsingExtensionSdk.targets" />
 	
-		<file src="..\bin\Release\**" target="lib\uap10.0" />
+		<file src="..\bin\Release\MyLibraryUsingExtensionSdk**" target="lib\uap10.0" />
 	</files>
 </package>
