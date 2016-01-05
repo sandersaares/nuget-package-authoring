@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata minClientVersion="3.2">
+		<id>Example.MyPortableLibrary</id>
+		<version>1.0.0</version>
+		<authors>Firstname Lastname</authors>
+		<description>Example of a portable library with NuGet package dependencies.</description>
+		<dependencies>
+			<dependency id="System.Numerics.Vectors" version="4.1.0" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="..\bin\Release\MyPortableLibrary.*" target="lib\dotnet" />
+	</files>
+</package>
