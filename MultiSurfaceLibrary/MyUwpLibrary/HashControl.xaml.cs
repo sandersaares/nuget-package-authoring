@@ -4,6 +4,7 @@
 	using System.Collections.Generic;
 	using System.Linq;
 	using Windows.UI.Xaml.Controls;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// A control that displays a hash. Just used to add flavor to the example since exporting XAML controls creates some
@@ -16,7 +17,12 @@
 		{
 			this.InitializeComponent();
 
-			OutputLabel.Text = HashHelper.CalculateStringHash("hello").ToString();
+			var output = JsonConvert.SerializeObject(new
+			{
+				HashValue = HashHelper.CalculateStringHash("hello")
+			});
+
+			OutputLabel.Text = output;
 		}
 	}
 }

@@ -6,10 +6,23 @@
 		<authors>Firstname Lastname</authors>
 		<description>Example of a multi-platform library that exposes different API surfaces to .NET 4.6 and UWP and also includes a portable component.</description>
 		<dependencies>
-			<dependency id="System.Linq" version="4.0.0" />
-			<dependency id="System.Numerics.Vectors" version="4.1.0" />
-			<dependency id="System.Resources.ResourceManager" version="4.0.0" />
-			<dependency id="System.Runtime" version="4.0.20" />
+			<!-- UWP has more dependencies than other platforms (Newtonsoft.Json). -->
+			<group targetFramework="uap10.0">
+				<dependency id="Newtonsoft.Json" version="8.0.1" />
+				
+				<dependency id="System.Linq" version="4.0.0" />
+				<dependency id="System.Numerics.Vectors" version="4.1.0" />
+				<dependency id="System.Resources.ResourceManager" version="4.0.0" />
+				<dependency id="System.Runtime" version="4.0.20" />
+			</group>
+			
+			<!-- All other platforms - just the dependencies of the portable library here. -->
+			<group>
+				<dependency id="System.Linq" version="4.0.0" />
+				<dependency id="System.Numerics.Vectors" version="4.1.0" />
+				<dependency id="System.Resources.ResourceManager" version="4.0.0" />
+				<dependency id="System.Runtime" version="4.0.20" />
+			</group>
 		</dependencies>
 	</metadata>
 	<files>
