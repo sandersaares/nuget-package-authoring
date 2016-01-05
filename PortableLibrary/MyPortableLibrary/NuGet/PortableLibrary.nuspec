@@ -7,6 +7,8 @@
 		<description>Example of a portable library with NuGet package dependencies.</description>
 		<dependencies>
 			<dependency id="System.Numerics.Vectors" version="4.1.0" />
+			<dependency id="System.Resources.ResourceManager" version="4.0.0" />
+			<dependency id="System.Runtime" version="4.0.20" />
 		</dependencies>
 	</metadata>
 	<files>
