@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata minClientVersion="3.2">
+		<id>Example.MyUwpLibrary</id>
+		<version>1.0.0</version>
+		<authors>Firstname Lastname</authors>
+		<description>Example of a UWP library that exports a user control.</description>
+		<dependencies>
+			<dependency id="Newtonsoft.Json" version="8.0.1" />
+		</dependencies>
+	</metadata>
+	<files>
+		<!-- The double wildcard will also grab all the resource files and the resource subdirectory. -->
+		<file src="..\bin\Release\SimpleUwpLibrary**" target="lib\uap10.0" />
+	</files>
+</package>
